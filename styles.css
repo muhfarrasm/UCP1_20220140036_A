@@ -1,0 +1,79 @@
+/* styles.css */
+/* Custom styles */
+
+/* Header */
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datetime {
+    font-size: 18px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/* Main Content */
+.main {
+    padding: 20px;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    width: 30%;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-img-top:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.marquee-text {
+    animation: marquee 40s linear infinite;
+    font-size: 24px; 
+    color: rgb(213, 140, 23);
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
